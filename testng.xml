@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SeleniumSuite" >
+    <listeners>
+        <listener class-name="Listeners"></listener>
+        <listener class-name="ExtentHTMLReports"></listener>
+    </listeners>
+    <test name="SeleniumTest1" >
+        <classes>
+            <class name="LoginQAClickAcademy" />
+        </classes>
+    </test>
+    <test name="SeleniumTest2" >
+        <classes>
+            <class name="ValidateTextOnHomePage" />
+        </classes>
+    </test>
+
+</suite>
