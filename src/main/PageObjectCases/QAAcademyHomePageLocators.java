@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 
 public class QAAcademyHomePageLocators {
     public WebDriver driver;
@@ -33,4 +35,5 @@ public class QAAcademyHomePageLocators {
     {
         return driver.findElement(featuredcoursestext);
     }
+    public int getPopUpSize() {return driver.findElements(popup).size();}
 }
