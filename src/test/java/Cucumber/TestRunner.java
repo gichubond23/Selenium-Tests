@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:LoginQAClickAcademy.feature" ,
+        features = "src/test/featurefiles" ,
         glue = "classpath:Cucumber"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
