@@ -32,6 +32,9 @@ public class QAAcademyHomePageLocators {
     @FindBy(xpath = "//h2[text()='Featured Courses']")
     public WebElement homepagetext;
 
+    @FindBy(xpath = "//ul[@class='nav navbar-nav navbar-right']/li[@class='active']/following-sibling::li[7]/a")
+    public WebElement ContactLink;
+
     public WebElement getLoginlink()
     {
         return driver.findElement(login);
@@ -54,4 +57,8 @@ public class QAAcademyHomePageLocators {
         return header.findElements(headerlinks);
     }
     public WebElement getHomepagetext(){return homepagetext;}
+    public WebElement getContactLink()
+    {
+        return ContactLink;
+    }
 }
